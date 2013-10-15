@@ -26,4 +26,13 @@ Perceptions and Use of BitTorrent P2P File Sharing by Dartmouth College Students
 
 
 ## Dartmouth Computing Services Network Data
-1. Talk with 
+1. Talk with:
+	* Ellen Waite-Franzen, VP IT/CIO
+	* Joe Doucet, CTO/Deputy CIO
+	* Steve Nyman, CISO
+	* Frank Archambeault, Network Services
+2. Talk about:
+	* How Dartmouth tracks users' bandwidth
+	* Can Dartmouth detect when someone is torrenting? If so, how frequently do Dartmouth students do it?
+	* If Dartmouth determines a student has been downloading illegal content, what can they do about it?
+	* Have any legal actions happened in the past? 
