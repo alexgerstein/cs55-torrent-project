@@ -1,6 +1,7 @@
-Perceptions and Use of BitTorrent P2P File Sharing by Dartmouth College Students
+Perceptions & Use of BitTorrent P2P File Sharing by Dartmouth College Students
 ====================
 Alex Gerstein & Scott Gladstone
+https://github.com/alexgerstein/cs55-torrent-project
 
 In our final project, we hope to investigate peer-to-peer (P2P) file sharing network protocols, specifically those related to torrenting (BitTorrent). After a general overview of the system and security flaws present, we plan to examine P2P in the context of Dartmouth College. By surveying students and speaking to Dartmouth College Computing Services, we hope to understand the disparity between the perception and actual use by students of torrent networks. If available, we also hope to obtain and analyze data from the College on student bandwidth habits, download frequencies, or other metrics that the College records. The outline below summarizes the questions we hope to answer and the individuals we hope to speak with.
 
