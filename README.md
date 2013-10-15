@@ -1,8 +1,6 @@
 Perceptions and Use of BitTorrent P2P File Sharing by Dartmouth College Students
 ====================
 
-# Outline
-
 ## Introduction
 1. What is a P2P file sharing network?
 2. What is BitTorrent (protocol)? 
