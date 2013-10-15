@@ -32,7 +32,7 @@ Perceptions and Use of BitTorrent P2P File Sharing by Dartmouth College Students
 	* Steve Nyman, CISO
 	* Frank Archambeault, Network Services
 2. Talk about:
-	* How Dartmouth tracks users' bandwidth
+	* How Dartmouth tracks users' bandwidth: is there data that we can use?
 	* Can Dartmouth detect when someone is torrenting? If so, how frequently do Dartmouth students do it?
 	* If Dartmouth determines a student has been downloading illegal content, what can they do about it?
 	* Have any legal actions happened in the past? 
