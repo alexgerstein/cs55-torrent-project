@@ -4,6 +4,7 @@ Title:
 	Perceptions and Use of BitTorrent P2P File Sharing by Dartmouth College Students
 
 Individuals: 
+
 	Scott W. Gladstone
 	swglad
 	sgladstone11@gmail.com
