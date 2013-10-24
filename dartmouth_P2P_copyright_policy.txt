@@ -1,0 +1,86 @@
+Dartmouth College Copyright Policy
+Peer-to-Peer File Sharing and Copyright Law
+http://www.dartmouth.edu/copyright/peer2peer/index.html
+
+Dartmouth College is devoted to creating, discovering, and sharing knowledge and information. Dartmouth is also committed to taking reasonable steps to avoid misuse of its computer network, including use of the computer network to violate the Copyright Law of the United States. All students, faculty, and staff should have a basic understanding of the Copyright Law and appropriate use of Dartmouth's technology resources.
+
+Campus computer networks are often used to reproduce and distribute copyrighted music, movies, television shows, pictures, and software through the use of peer-to-peer (P2P) networks. P2P file sharing applications allow a computer to connect to a P2P network, and once connected, make it possible to download and share files with other users on the network. P2P networking has been around for many years, but file sharing applications such as LimeWire, KaZaA and BitTorrent have made it easy to trade files with people around the world. Beginning in April 2003 when members of the Recording Industry Association of America filed civil suits against students at Michigan Tech, Princeton University, and Rensselaer Polytechnic Institute seeking substantial damages for copyright infringement, there has been an increasing level of attention to violators of copyright laws. (Those cases were quickly settled, with each of the student defendants agreeing to pay more than $12,000 in damages.) Since then, there has been increasing pressure on universities to take action against copyright violations, especially those attributable to P2P. When Dartmouth College receives a complaint from a copyright holder, we notify the individual involved and pass along any information received from the copyright holder to that individual. We do not supply any information to the copyright holder about the individual involved unless a valid subpoena is presented.
+
+Here are the answers to some frequently asked questions about the application of the Copyright Law to peer-to-peer file sharing:
+- Are peer-to-peer file-sharing systems illegal?
+- What kinds of activities are probable violations of the Copyright Law?
+- What does Dartmouth policy say about copyright infringement?
+- Are MP3s illegal?
+- How could I get caught if I violate Copyright Law or Dartmouth policy?
+- How does Dartmouth get notified about violations and are all notifications the same?
+- What will happen if I get caught?
+- But if everyone breaks the rules, how can you punish just one person?
+- How can I obtain digital music and movie files legally?
+- What is fair use?
+- How can I get more information if I still have questions about copyright?
+
+Are peer-to-peer file-sharing systems illegal?
+
+P2P technologies have many legitimate uses. For this reason, Dartmouth does not ban "P2P" programs from its network. We believe, however, that the primary use of P2P technology has been copying of commercial music and video files, without the copyright holder's permission, for personal enjoyment. It is that type of activity that generally violates the Copyright Law.
+
+What kinds of activities are probable violations of the Copyright Law?
+
+Any of the following activities, if done without permission of the copyright owner:
+Copying and sharing images, music, movies, television shows or other copyrighted material through the use of P2P technology.
+Purchasing a CD or DVD and then making copies for others.
+Posting or plagiarizing copyrighted material on your personal Web space.
+Downloading anything of which you don't already own a copy (software, MP3s, movies, television shows, etc.).
+Copyright law applies to a wide variety of works, and covers much more than is listed above. If you're in doubt about a particular work, assume that it is copyrighted!
+
+What does Dartmouth policy say about copyright infringement?
+
+The Dartmouth College Copyright Policy states: "The holders of copyright possess the exclusive right to authorize reproduction of, distribution of copies or phono records of, public performance of, public display of, and preparation of derivative works based on copyrighted works. . . . All faculty, students, and employees must adhere to this policy."
+Dartmouth's Information Technology Policy states: "Dartmouth College expects each member of the community to use Dartmouth's information technology resources, including connections to resources external to Dartmouth that are made possible by Dartmouth's information technology resources, responsibly, ethically, and in compliance with the Policy, relevant laws, and all contractual obligations to third parties. The use of Dartmouth's information technology resources is a privilege. If a member of the community fails to comply with this Policy or relevant laws and contractual obligations, that member's privilege to access and use Dartmouth's information technology resources may be revoked. ..."
+
+Are MP3s illegal?
+
+Some MP3s can be legally obtained through online subscription services (see the FAQ below) or from sites officially permitted by the copyright holders to offer certain MP3 downloads. Some are copyright free. Most MP3s don't fall into either category.
+MP3 files are completely legal, but it's illegal to make or distribute MP3s of music recordings that you don't already own, or which you haven't obtained permission to reproduce from the copyright owner.
+In almost all cases, sharing MP3s over the campus network is also illegal.
+United States copyright law allows you to create MP3s only for your personal use and only of songs to which you already have rights. You can make MP3s only of songs for which you already own the CD or tape. And personal use means for you alone - you can't make copies and give or sell them to other people.
+
+How could I get caught if I violate Copyright Law or Dartmouth policy?
+
+Dartmouth system administrators do not routinely police our network for illegal activity, but they must respond to formal legal complaints they receive. Also, if your computer begins to consume excessive network resources, Computing Services will investigate your network activities in order to keep the network operating smoothly.
+Organizations like the Recording Industry Association of America (RIAA) or BayTSP (representing movie and television studios among others) frequently police file-sharing programs for copyrighted material belonging to the artists/studios they represent.
+Some students are under the impression that their activity on the Internet is largely anonymous or untraceable, but this is untrue. In fact, almost all your activity on the Internet is logged on many of the computer systems you use, and while these logs usually are not inspected, they certainly can be used to confirm or implicate you in illegal activity.
+
+How does Dartmouth get notified about violations and are all notifications the same?
+
+Dartmouth receives two different types of notices, "take down" and "preservation". In an average month, Dartmouth receives about 50 notices. A take down notice is a communication that asks the College to notify an individual to stop sharing copyrighted materials. Computing Services forwards these notices to the individuals whose computers are involved and asks them to discontinue the infringing activity. Most people comply promptly.
+A preservation notice alerts the College to a forthcoming subpoena that may be served. The subpoena asks the College to provide identifying information about a user of our network who has infringed copyrighted materials. Sometimes, following the preservation notice and prior to the subpoena, an early settlement letter is sent to the College from the copyright holder asking that it be forwarded to the individual infringing on the copyright. This allows the individual to work with the copyright holder to resolve the dispute before going through the legal system.
+
+What will happen if I get caught?
+
+Violation of the Copyright Law can have serious consequences:
+College Disciplinary Action: Copyright infringement can subject a student to disciplinary action under Standards VI and VII of the Standards of Conduct for Students, since violation of law or College policy is grounds for discipline. First offenses will result in a notice from Computing Services to cease illegal activity. Failure to comply or further incidents of infringement may result in referral to the Dean's Office and loss of network access for the infringing computer. Sanctions may include suspension of network access (meaning loss of e-mail and course web site access) and formal college disciplinary action. These outcomes might prove harmful to your future job prospects or academic pursuits, since many employers and graduate and professional schools require you to disclose College disciplinary action.
+Civil Liability: Persons found to have infringed may be held liable for substantial damages and attorneys fees. The law entitles a plaintiff to seek statutory damages of $150,000 for each act of willful infringement. In the cases filed by the RIAA against students at Princeton, RPI, and Michigan Tech, the recording industry sued for damages of $150,000 for each recording infringed.
+Criminal Liability: Copyright infringement also carries criminal penalties under the federal No Electronic Theft Act. Depending on the number and value of the products exchanged, penalties for a first offense may be as high as three years in prison and a fine of $250,000. Dartmouth is not the police; however, Dartmouth will cooperate with the law enforcement agencies when required.
+But if everyone breaks the rules, how can you punish just one person?
+Just because the government, or a company that sues you, or the Committee on Standards, cannot administer punishments equally does not mean that they cannot administer them at all. As with speeding tickets, "everyone else was doing it" will not satisfy an enforcement officer or provide an excuse for illegal behavior.
+Pleading ignorance of these rules or the applicable laws is also equally useless in an enforcement situation, so educate yourself before you decide to break the law.
+You should recognize that violating the Copyright Law or Dartmouth's policies concerning copyright are significant risks that you may regret.
+
+How can I obtain digital music and movie files legally?
+
+Some music, movies and television shows can be legally obtained through online subscription services or from sites officially permitted by the copyright holders to offer certain downloads. Apple's iTunes store, Netflix or Blockbuster are examples of these services.
+
+What is fair use?
+
+You may have heard of "fair use." It is discussed in the Copyright Act. Fair use is a concept that allows use of limited portions of a copyrighted work, without the permission of the copyright owner, for purposes such as scholarship, research, and criticism. Fair use does not mean that if you think it's fair that you should be able to use a work, it's okay. Rather, whether a particular use of copyrighted material is a fair use must be judged according to the four criteria in the Copyright Act:
+Purpose and character of the use (why do you want to use it?).
+Nature of the copyrighted work (what kind of work is it?).
+Amount and substantially used (how much do you want to copy?).
+Effect on the potential market for or value of the work (will your copying contribute to decreasing the value or demand for the work?).
+For example, it's fine to quote from a book when writing about it, but it's not okay to reproduce the entire book.
+Unfortunately, the four factors listed above do not always provide very clear guidance. Fair use must be determined on a case-by-case basis. Fair use can be tricky to define; see the "Other Sources" link on Dartmouth's Copyright web site for additional information.
+
+How can I get more information if I still have questions about copyright?
+
+If you still have questions about copyright and use of Dartmouth system resources, you can send them to: copyright.complaints@cloud.dartmouth.edu.
+
