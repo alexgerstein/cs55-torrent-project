@@ -1,0 +1,17 @@
+Survey: Student Perception of Torrenting at Dartmouth
+Scott Gladstone & Alex Gerstein
+
+Title: Torrenting at Dartmouth
+
+1. Have you ever downloaded files such as music or movies via tormenting? (Y/N/I)
+2. Have you ever downloaded files such as music or movies via torrenting while at Dartmouth? (Y/N/I)
+
+3. How many files, on average, do you download via torrenting per month while at Dartmouth? (0, 1-5, 6-10, 10-20, 20+)
+4. How many files, on average, do you think that other students download via torrent per month while at Dartmouth? (0, 1-5, 6-10, 10-20, 20+)
+
+5. Do you think that Dartmouth records when you or someone else downloads files illegally? (Y/N/I)
+
+6. Dartmouth policy states that, "If your computer begins to consume excessive network resources, Computing Services will investigate your network activities in order to keep the network operating smoothly….Sanctions [for illegal downloading] may include suspension of network access (meaning loss of e-mail and course web site access) and formal college disciplinary action."
+Does your knowledge of this policy affect how often you download files via torrenting? (Y/N)
+
+7. Do you have any thoughts as to how Dartmouth could reduce student torrenting on campus? (Comment box)
