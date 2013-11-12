@@ -1,10 +1,10 @@
 \documentclass[12pt]{article}
 \title{\textbf{Perceptions \& Use of BitTorrent P2P File Sharing by Dartmouth College Students\footnote{This paper constitutes the final project for the Fall 2013 iteration of CS 55: Security and Privacy, taught by Charles C. Palmer, Adjunct Professor of Computer Science, Dartmouth College; CTO Security and Privacy, IBM Research.}}}
-\author{Alex Gerstein\textsuperscript{1} and Scott Gladstone\textsuperscript{2} \\
-	\\ \textsuperscript{1} Dartmouth College\\ Computer Science, Film Studies\\ \texttt{alex.gerstein@dartmouth.edu} 
-	\and
-	\textsuperscript{2} Dartmouth College\\ Computer Science, Economics\\ \texttt{scott.gladstone@dartmouth.edu}
-}
+\author{
+	Alex Gerstein \\ Dartmouth College\\ Computer Science, Film Studies\\ \texttt{alex.gerstein@dartmouth.edu} 
+	\\ \\
+	Scott Gladstone \\ Dartmouth College\\ Computer Science, Economics\\ \texttt{scott.gladstone@dartmouth.edu}
+	}
 \date{\today}
 
 \usepackage[margin=1.0in]{geometry}
@@ -53,12 +53,17 @@ P2P networks are often found in residential home networks, allowing users to con
 The first P2P file sharing networks, such as the purely-mp3 sharing network Napster, relied on a central index server to assist with the transfer of files. When someone searched for a file, the central index server -- which contained an index of all of the users and their shared content -- searched for all available copies of the file and presented them to the user; the file would then be transferred directly between the two private computers \cite{P2PFileSharewiki}. Because the file sharing occurred over a central network, Napster was held liable for copyright infringement over the sharing of mp3 files and was shut down in 2001 \cite{napster}. New protocols such as BitTorrent represent a technological evolution of P2P file sharing networks.
 
 \subsection{BitTorrent Protocol}
-What is BitTorrent (protocol)?
-What makes BitTorrent different from other P2P systems?
-What makes BitTorrent difficult to track?
+
+BitTorrent is a P2P file sharing protocol that makes use of unique design to reduce the bandwidth and download time for more frequently requested data. The protocol allows a single user to download files quickly by allowing users to join a ``swarm'' of hosts to download and upload from each other simultaneously. Thus, instead of attempting to transfer a large file from one user to another like other P2P network protocols -- a slow, bandwidth-intensive process --, BitTorrent allows a user to download small segments of the file from a variety of users, significantly reducing computational energy and download time\cite{BitTorrent}. Because of this design, BitTorrent is often used for distribution of very large files, very popular files, and files available for free, as it is more efficient to distribute these files using BitTorrent than a regular download.
+
+When a user ``torrents'' a file, meaning that the user is attempting to download a file over a P2P network using a BitTorrent client implementing the BitTorrent protocol, they begin by loading a .torrent file into a BitTorrent client. A .torrent file is a computer file that contains metadata about files to be distributed, including file names, sizes, checksums of all individual pieces, and a list of the network locations of ``trackers'' -- a server that facilitates communication between peers on a P2P network -- to help participants in the system seeking to download the same data find one another \cite{HTG}. The tracker shares the peers' IP addresses with other BitTorrent clients in the ``swarm,'' the group of all peers sharing a torrent. 
+
+Once connected, a BitTorrent client downloads bits of the files specified in the torrent in small pieces, downloading different segments from data from different computers in the swarm. Once the BitTorrent client has some data, it can then begin to upload that data to other BitTorrent clients in the swarm; by using both downloading and uploading bandwidth and dividing the files into pieces, the time required to download the file is significantly reduces \cite{BitTorrent}. Thus, it is worth noting the following concept: ``Everyone downloading a torrent is also uploading the same torrent. If 10,000 people are downloading the same file, it doesn't put a lot of stress on a central server. Instead, each downloader contributes upload bandwidth to other downloaders, ensuring the torrent stays fast," \cite{HTG}. From this protocol, clients never actually download files from the tracker itself; the tracker keeps track of the clients connected in the swarm, but does not actually participate in the process of downloading or uploading data \cite{HTG}.
+
+The process of sharing data via BitTorrent starts with a \emph{seed}, or the initial machine possession 100\% of the data. Then \emph{leechers}, also known as \emph{downloaders}, which refers to peers that do not have the entire file or are in the process of downloading the file. As the number of downloaders increases, the reliance of new leechers on old leechers decreases, as each successful downloader becomes a source of the file for future downloaders \cite{glossary}. From that point, the process repeats and continues, allowing peers on the network to share any and all files to which any other peer has access.
 
 \subsection{BitTorrent Security Concerns}
-What are security issues related to using BitTorrent?
+What are security issues related to using BitTorrent? torrent poisoning (wiki)
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -81,6 +86,10 @@ What are some past cases and punishments relating to torrenting?
 \bibitem{About} http://compnetworking.about.com/od/p2ppeertopeer/a/p2pintroduction.htm
 \bibitem{P2PFileSharewiki} ``Peer-to-peer file sharing.'' \emph{Wikipedia}. Accessed November 4, 2013. Available at http://en.wikipedia.org/wiki/Peer-to-peer\_file\_sharing\#History.
 \bibitem{napster} Douglas, Guy. ``Copyright and Peer-To-Peer Music File Sharing: The Napster Case and the Argument Against Legislative Reform.'' \emph{Murdoch University Electronic Journal of Law.} Vol. 11, No. 1 (March 2004). Available at http://www.murdoch.edu.au/elaw/issues/v11n1/douglas111.html.
+
+\bibitem{HTG} http://www.howtogeek.com/141257/htg-explains-how-does-bittorrent-work/
+\bibitem{glossary} http://en.wikipedia.org/wiki/Glossary\_of\_BitTorrent\_terms\#Leech
+
 \end{thebibliography}
 
 ** statistics on P2P we may want to use: http://www.ipoque.com/sites/default/files/mediafiles/documents/internet-study-2008-2009.pdf
