@@ -1,0 +1,6 @@
+2.1 Implications for Individuals and Network Hosts
+
+	While the BitTorrent protocol itself is legal, those who use the service often do so to obtain files illegally. In a 2010 sampling of the one thousand most actively seeded torrent files, 89 percent of the files were confirmed to be illegally shared and the majority of the remaining 11 percent was likely infringing (http://arstechnica.com/tech-policy/2010/07/only-03-of-files-on-bit-torrent-confirmed-to-be-legal/). Only three files, or 0.3%, were confirmed to be legal.
+
+2.2 Dartmouth Policy and Practice
+
