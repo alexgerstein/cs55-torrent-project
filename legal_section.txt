@@ -10,3 +10,9 @@
 
 2.2 Dartmouth Policy and Practice
 
+	In Dartmouth College's "Acceptable Use Policy," users agree to not "Post, use, or transmit content that you do not have the right to post or use; for example, under intellectual property, confidentiality, privacy or other applicable laws" (http://www.dartmouth.edu/comp/about/policies/acceptable_use_policy.html). Furthermore, Dartmouth's "Copyright Policy & Guidelines" includes the "copying and sharing images, music, movies, television shows or other copyrighted material through the use of P2P technology" as a probable violation of the "Copyright Law" (http://www.dartmouth.edu/copyright/peer2peer/index.html#P2P)
+
+	Although the College does not police students' torrenting activities, it often receives formal legal notices from organizations like the Recording Industry Association of America (RIAA) or BayTSP (representor of movie and television studios) for infringers to discontinue their illegal activity. The College is required to forward these notices to the students responsible.
+
+
+	If a user continues his/her behavior after he/she is issued this warning, the College states that it is permitted to revoke the user's access to its information technology resources. Additionally, any civil liability pushed by the anticopyright organizations 
