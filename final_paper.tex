@@ -24,6 +24,10 @@
 In our final project, we hope to investigate peer-to-peer (P2P) file sharing network protocols, specifically those related to torrenting (BitTorrent). After a general overview of the system and security flaws present, we plan to examine P2P in the context of Dartmouth College. By surveying students and speaking to Dartmouth College Computing Services, we hope to understand the disparity between the perception and actual use by students of torrent networks. If available, we also hope to obtain and analyze data from the College on student bandwidth habits, download frequencies, or other metrics that the College records. The outline below summarizes the questions we hope to answer and the individuals we hope to speak with.
 \end{abstract}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% ********			INTRODUCTION  		******** %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \pagebreak
 \section{Introduction}
 
@@ -56,7 +60,7 @@ The first P2P file sharing networks, such as the purely-mp3 sharing network Naps
 
 BitTorrent is a P2P file sharing protocol that makes use of unique design to reduce the bandwidth and download time for more frequently requested data. The protocol allows a single user to download files quickly by allowing users to join a ``swarm'' of hosts to download and upload from each other simultaneously. Thus, instead of attempting to transfer a large file from one user to another like other P2P network protocols -- a slow, bandwidth-intensive process --, BitTorrent allows a user to download small segments of the file from a variety of users, significantly reducing computational energy and download time\cite{BitTorrent}. Because of this design, BitTorrent is often used for distribution of very large files, very popular files, and files available for free, as it is more efficient to distribute these files using BitTorrent than a regular download.
 
-When a user ``torrents'' a file, meaning that the user is attempting to download a file over a P2P network using a BitTorrent client implementing the BitTorrent protocol, they begin by loading a .torrent file into a BitTorrent client. A .torrent file is a computer file that contains metadata about files to be distributed, including file names, sizes, checksums of all individual pieces, and a list of the network locations of ``trackers'' -- a server that facilitates communication between peers on a P2P network -- to help participants in the system seeking to download the same data find one another \cite{HTG}. The tracker shares the peers' IP addresses with other BitTorrent clients in the ``swarm,'' the group of all peers sharing a torrent. 
+When a user ``torrents'' a file, meaning that the user is attempting to download a file over a P2P network using a BitTorrent client implementing the BitTorrent protocol, they begin by loading a .torrent file into a BitTorrent client. A .torrent file is a computer file that contains metadata about files to be distributed, including file names, sizes, checksums of all individual pieces, and a list of the network locations of ``trackers'' -- a server that facilitates communication between peers on a P2P network -- to help participants in the system seeking to download the same data find one another \cite{HTG}. The tracker shares the peers' IP addresses with other BitTorrent clients in the ``swarm,'' the group of all peers sharing a torrent. Each piece of a file specified in a torrent is protected by a cryptographic hash contained in the .torrent file; this ensures that any modification of the piece can be easily detected, preventing a user from downloading both accidental and malicious modifications of any pieces of a file \cite{BitTorrent}.
 
 Once connected, a BitTorrent client downloads bits of the files specified in the torrent in small pieces, downloading different segments from data from different computers in the swarm. Once the BitTorrent client has some data, it can then begin to upload that data to other BitTorrent clients in the swarm; by using both downloading and uploading bandwidth and dividing the files into pieces, the time required to download the file is significantly reduces \cite{BitTorrent}. Thus, it is worth noting the following concept: ``Everyone downloading a torrent is also uploading the same torrent. If 10,000 people are downloading the same file, it doesn't put a lot of stress on a central server. Instead, each downloader contributes upload bandwidth to other downloaders, ensuring the torrent stays fast," \cite{HTG}. From this protocol, clients never actually download files from the tracker itself; the tracker keeps track of the clients connected in the swarm, but does not actually participate in the process of downloading or uploading data \cite{HTG}.
 
@@ -65,19 +69,45 @@ The process of sharing data via BitTorrent starts with a \emph{seed}, or the ini
 \subsection{BitTorrent Security Concerns}
 What are security issues related to using BitTorrent? torrent poisoning (wiki)
 
-%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% ********			LEGAL ISSUES  		******** %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Legal Issues}
 Torrenting is not inherently illegal. 
 
-\subsection{Copyright Law Violations}
+\subsection{Implications for Individuals and Network Hosts}
 What are the legal implications for an individual user for torrenting copyrighted information?
 
-\subsection{Dartmouth College Copyright Policy}
+\subsection{Dartmouth Policy and Practice}
 What are the legal implications for a university like Dartmouth with students that do illegal torrenting?
 What are some past cases and punishments relating to torrenting?
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% ********	     METHODS, DATA & ANALYSIS  	******** %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Methods, Data \& Analysis}
+
+\subsection{Student Perception Survey}
+Goals, Questions, and Distribution
+
+\subsection{Dartmouth Network Patterns}
+Adam Goldstein, PaloAlto, types of metrics
+
+\subsection{Relationship between Student Perception and Dartmouth Network Data}
+Draw some conclusions and relationships between analytics (e.g. perception ? practice)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% ********			  CONCLUSIONS  		******** %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusion}
+Summary, Questions, and Policy Recommendations
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% ********			  REFERENCES  		******** %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagebreak
 \begin{thebibliography}{9}
 \bibitem{BitTorrent} ``BitTorrent: Beginner's Guide.'' \emph{BitTorrent Inc.} Accessed November 4, 2013. Available at http://www.bittorrent.com/help/guides/beginners-guide.
@@ -93,5 +123,161 @@ What are some past cases and punishments relating to torrenting?
 \end{thebibliography}
 
 ** statistics on P2P we may want to use: http://www.ipoque.com/sites/default/files/mediafiles/documents/internet-study-2008-2009.pdf
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% ********			  APPENDIX	  		******** %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{Appendix A}
+
+\newenvironment{packed_enum}{ % compact list
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+\newenvironment{question}{ % reduced spacing for questions
+  \setlength{\parskip}{0pt}
+}
+
+\subsection*{Student Perception Survey}
+
+\begin{enumerate}
+
+\item \begin{question}
+\noindent Have you ever downloaded files (music, movies, applications, etc.) via torrenting?
+  \begin{packed_enum}
+  \item Yes
+  \item No
+  \end{packed_enum}
+\end{question}
+
+\item \begin{question}
+\noindent Have you ever downloaded files (music, movies, applications, etc.) via torrenting while at Dartmouth?
+  \begin{packed_enum}
+  \item Yes
+  \item No
+  \end{packed_enum}
+\end{question}
+
+\item \begin{question}
+\noindent On average, how many files do you download via torrenting per month at Dartmouth?
+  \begin{packed_enum}
+  \item 0
+  \item 1-5
+  \item 6-10
+  \item 11-20
+  \item 21+
+  \end{packed_enum}
+\end{question}
+
+\item \begin{question}
+\noindent How many files do you think an average student at Dartmouth downloads via torrenting per month?
+  \begin{packed_enum}
+  \item 0
+  \item 1-5
+  \item 6-10
+  \item 11-20
+  \item 21+
+  \end{packed_enum}
+\end{question}
+
+\item \begin{question}
+\noindent Do you think that Dartmouth records when you or someone else torrents a file?
+  \begin{packed_enum}
+  \item Yes
+  \item No
+  \item Unsure
+  \end{packed_enum}
+\end{question}
+
+\item \begin{question}
+\noindent Does your knowledge of Dartmouth's copyright policy affect how often you download files via torrenting?
+Dartmouth policy states that, "If your computer begins to consume excessive network resources, Computing Services will investigate your network activities in order to keep the network operating smoothly?.Sanctions [for illegal downloading] may include suspension of network access (meaning loss of e-mail and course web site access) and formal college disciplinary action."
+   \begin{packed_enum}
+  \item Yes
+  \item No
+  \end{packed_enum}
+\end{question}
+
+\item \noindent Do you have any thoughts on how Dartmouth could reduce student torrenting on campus?
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{Appendix B}
+\subsection*{Email Notice of Unauthorized Use of Copyrighted Property}
+
+Sent: Friday, October 28, 2011 4:01 PM
+\\To: ****************
+\\Subject: FW: Notice ID: ******** Notice of Unauthorized Use of ************* Corporation Property
+
+Dartmouth College has received a notice claiming that an IP address registered to you has been used to offer for download via the Internet, without permission, a copyrighted work, cited in the complaint below.
+
+Infringement is actionable under federal copyright law and can require the payment of damages of up to 0,000 per violation, as well as carrying the potential for criminal penalties. Respect for intellectual property ownership is a fundamental value in academia. Copyright infringement is also a violation of College policy. Additional information about the College's copyright policy - including peer-to-peer file sharing - can be found online at http://www.dartmouth.edu/copyright/.
+
+By return e-mail, please indicate that (1) you have removed from your computer any programs that may be used to offer copyrighted material via the Internet for download by others without the copyright owner's permission (examples of such programs include BitTorrent and Limewire) and (2) that you will desist from activities that infringe copyright.  If you need assistance in removing file-sharing programs from your computer, the College's Computing Services department would be glad to assist you.  For this purpose, please contact the Student Help Desk or your IT Consultant.
+
+If you fail to respond promptly, the College will block your IP address. The College must take this step in order to avail itself of the legal protection afforded service providers under the Digital Millennium Copyright Act.
+Please note, in most cases this notice comes as a result of the uploading or downloading of music, video, audio, movie or television files that, as a functionality of the file-sharing software used for downloading, is available for uploading by Internet requests without your awareness or permission anytime that your computer is turned on. Scans by copyright owners (such as the company that made the complaint in this case) capture both uploading and downloading of these files.
+
+If you believe this notice is in error, or choose to challenge it, please contact me and I will explain the procedure. This procedure entails the filing on your part of a counter-notice asserting your right to the material and your right to distribute it, and satisfying all of the requisite legal formalities. Only after you have filed a proper counter-notice can a request to have your IP address unblocked be granted.
+
+Thank you for your cooperation.  I look forward to hearing from you.
+
+\begin{center}
+{- Chief Information Security Officer,
+Dartmouth College,
+Hanover, NH  03755}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{Appendix C}
+\subsection*{File Sharing Program Gigabyte Usage\footnote{Provided by Adam Goldstein, Dartmouth College Computing Services}
+}
+\textbf{\indent 24 Hour\\\\}
+    \begin{tabular}{ | l | l | l | p{5cm} |}
+    \hline
+    App Sub Category & Application Name & Gigabytes & Percentage \\ \hline
+    file-sharing & bittorrent & 177.09 & 70.50  \\ \hline
+    file-sharing & dropbox & 44.56 & 17.73  \\ \hline
+    file-sharing & ftp & 20.25 & 8.06  \\ \hline
+    file-sharing & azureus & 3.42 & 1.36  \\ \hline
+    file-sharing & pando & 1.94 & 0.77  \\ \hline
+    file-sharing & google-drive-web & 1.53 & 0.61  \\ \hline
+    file-sharing & skydrive-base & 1.49 & 0.60  \\ \hline
+    file-sharing & boxnet-base & 0.89 & 0.36  \\ \hline
+    \end{tabular}
+
+\textbf{7 Day\\\\}
+    \begin{tabular}{ | l | l | l | p{5cm} |}
+    \hline
+    App Sub Category & Application Name & Gigabytes & Percentage \\ \hline
+    file-sharing & bittorrent & 1180.17 & 60.10  \\ \hline
+    file-sharing & dropbox & 394.77 & 20.10  \\ \hline
+    file-sharing & ftp & 313.54 & 15.97  \\ \hline
+    file-sharing & pando & 36.40 & 1.85  \\ \hline
+    file-sharing & skydrive-base & 12.94 & 0.66  \\ \hline
+    file-sharing & boxnet-base & 10.02 & 0.51  \\ \hline
+    file-sharing & azureus & 7.69 & 0.39  \\ \hline
+    file-sharing & google-drive-web & 7.62 & 0.39  \\ \hline
+    \end{tabular}
+    
+\textbf{30 Day\\\\}
+    \begin{tabular}{ | l | l | l | p{5cm} |}
+    \hline
+    App Sub Category & Application Name & Gigabytes & Percentage \\ \hline
+    file-sharing & bittorrent & 4757.79 & 60.89  \\ \hline
+    file-sharing & dropbox & 1697.71 & 21.73  \\ \hline
+    file-sharing & ftp & 1046.01 & 13.39  \\ \hline
+    file-sharing & pando & 137.98 & 1.77  \\ \hline
+    file-sharing & azureus & 53.67 & 0.69  \\ \hline
+    file-sharing & skydrive-base & 52.94 & 0.68  \\ \hline
+    file-sharing & boxnet-base & 33.32 & 0.43  \\ \hline
+    file-sharing & google-drive-web & 29.01 & 0.37  \\ \hline
+    \end{tabular}
 
 \end{document}
