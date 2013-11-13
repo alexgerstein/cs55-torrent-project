@@ -88,9 +88,38 @@ What are some past cases and punishments relating to torrenting?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Methods, Data \& Analysis}
+The goals of this research were three-fold: first, to determine the student perception of the occurrence of torrenting at Dartmouth; second, to investigate the actual occurrence of torrenting at Dartmouth based on data provided by Dartmouth College Computing Services; and third, to examine the relationship between student perceptions and actual incidences of torrenting and make policy recommendations with the purpose of aligning student perceptions and student network activity. The methods employed to carry out these goals and the data collected are described in the sections 3.1 to 3.3.
 
 \subsection{Student Perception Survey}
-Goals, Questions, and Distribution
+%Goals, Questions, and Distribution
+\subsubsection{Participants}
+The participants in the survey were 130 students at Dartmouth College. The population consisted of second-year, third-year, and fourth-year students at the College. Participation was anonymous and voluntary. All prospective participants were sent a link to a Google Form that was used to create the survey; all participants had completely voluntary choice in clicking on the link, examining the questions, and completing and submitting the survey. The population examined in this study may be biased in the sense that many individuals who completed the survey could have personally known the researchers or were members of CS 55: Security \& Privacy, the class for which this research was completed.
+
+\subsubsection{Survey Design}
+The survey was designed via Google Forms and was administered by providing a link to the survey to all prospective participants. The survey consisted of seven questions, six of which were mandatory. The mandatory questions asked the participant for his/her person experience with torrenting, whether they believed other students at Dartmouth torrented, the number of files that they believed the average student torrented, whether they believed Dartmouth recorded information about student torrenting, and whether their knowledge of Dartmouth Copyright Violation Policy impacted the amount that they torrented. The seventh, optional question asked whether the participant has any thoughts as to how Dartmouth College could reduce the incidence of torrenting on campus. All surveys were timestamped when submitted and resubmissions/changing of answers were not permitted. See Appendix A for a copy of the survey administered. 
+
+\subsubsection{Perception Data}
+Of the 130 students, 78 (60.0\%) stated that they had previously downloaded a file via torrenting in general, but only 52 (40.0\%) stated that they had downloaded files via torrenting while at Dartmouth. This indicates that 52 out of 78 individuals (74.3\%) who had torrented in general had also torrented while at Dartmouth. Of the 52 students who designated that they torrented at Dartmouth, 34 (65.4\%) claimed to download one to five files per month, on average; 5 (9.6\%) claimed to download zero files per month on average; 5 (9.6\%) claimed to download six to ten files per month on average; and 9 (17.3\%) claimed to download 11 or more files per month on average. 
+
+Considering all students (both torrenters and non-torrenters), 82 of 130 students (63.1\%) claimed to download zero files per month on average. This was highly significantly different (\emph{p}$<$.00001) from the 16 (12.3\%) that those participants believed that the average Dartmouth downloaded via torrenting on average. The median self-reported number of files downloaded via torrenting on average was zero, while the median perceived number of files downloaded by the average student was one to five; based on the distributions presented in Figures 3 and 4 below, there is a clear right shift in Figure 4 as compared with Figure 3, indicating that there is a significantly higher perception of student torrenting than what actually occurs.
+
+\begin{figure}[h!]
+\centering
+\begin{minipage}[b]{0.45\linewidth}
+	\includegraphics[width=77mm]{Figure3}
+	\caption{Bar distribution of reported number of files downloaded via torrenting by the participant.}
+	\label{p2p_network}
+\end{minipage}
+\quad
+\centering
+\begin{minipage}[b]{0.45\linewidth}
+	\includegraphics[width=77mm]{Figure4}
+	\caption{Bar distribution of perceived number of files downloaded via torrenting by the ``average Dartmouth student.''}
+	\label{p2p_network}
+\end{minipage}
+\end{figure}
+
+With regard to whether participants believed that Dartmouth recorded student torrenting information or whether knowledge of Dartmouth's Copyright Violation Policy affects how often the participant torrents, the results were less conclusive. Of the 130 students asked if Dartmouth records when someone torrents a file, 47 (36.2\%) said Yes; 28 (21.5\%) said No; and 55 (42.3\%) said they were Unsure. Attempting to break down the results further by number of files participants reported downloading or by the number of files that participants perceived that other students download were also inconclusive; more data would need to be collected to determine this result. Regarding whether knowledge of Dartmouth's Copyright Violation Policy affected personal torrenting practices, there was no significant difference (\emph{p}$>$.05) between the number of participants who said Yes (N=63, 48.5\%) and who said No (N=67, 51.5\%). 
 
 \subsection{Dartmouth Network Patterns}
 Adam Goldstein, PaloAlto, types of metrics
@@ -236,7 +265,7 @@ Hanover, NH  03755}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section*{Appendix C}
-\subsection*{File Sharing Program Gigabyte Usage\footnote{Provided by Adam Goldstein, Dartmouth College Computing Services}
+\subsection*{File Sharing Program Gigabyte Usage\footnote{Provided by Adam Goldstein, Dartmouth College Computing Services.}
 }
 \textbf{\indent 24 Hour\\\\}
     \begin{tabular}{ | l | l | l | p{5cm} |}
