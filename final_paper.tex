@@ -16,6 +16,8 @@
 \usepackage{graphicx}
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage[superscript,biblabel]{cite}
+\usepackage{url}
+
 
 \begin{document}
 
@@ -52,17 +54,17 @@ P2P is a ``type of Internet network that allows users with the same program to c
 \end{minipage}
 \end{figure}
 
-P2P networks are often found in residential home networks, allowing users to configure their computers to share files, printers, and other resources among all devices; with a number of computers running similar network protocols, P2P is a convenient way to access shared resources \cite{About}. However, the term ``P2P'' used today generally does not refer to the network architecture from which its name is derived, but to P2P file sharing systems. Using P2P software applications such as Gnutella or eDonkey, users are able to search for, transfer, and download data files over the Internet with any user on the same P2P file sharing network. The implications of such systems are huge: if \emph{any} user on the system has a file that another user demands, the second user can -- via the network -- obtain the file. The second user will then also become a source of the file in the P2P network, making it faster and easier for more users to download the file. 
+P2P networks are often found in residential home networks, allowing users to configure their computers to share files, printers, and other resources among all devices; with a number of computers running similar network protocols, P2P is a convenient way to access shared resources. However, the term ``P2P'' used today generally does not refer to the network architecture from which its name is derived, but to P2P file sharing systems. Using P2P software applications such as Gnutella or eDonkey, users are able to search for, transfer, and download data files over the Internet with any user on the same P2P file sharing network. The implications of such systems are huge: if \emph{any} user on the system has a file that another user demands, the second user can -- via the network -- obtain the file. The second user will then also become a source of the file in the P2P network, making it faster and easier for more users to download the file. 
 
-The first P2P file sharing networks, such as the original iteration of the MP3-sharing network Napster, relied on a central index server to assist with the transfer of files. When someone searched for a file, the central index server -- which contained an index of all of the users and their shared content -- searched for all available copies of the file and presented them to the user; the file would then be transferred directly between the two private computers \cite{P2PFileSharewiki}. Because the file sharing occurred over a central network, Napster was held liable for copyright infringement over the sharing of MP3 files and was shut down in 2001 \cite{napster}. New protocols such as BitTorrent represent a technological evolution of P2P file-sharing networks.
+The first P2P file sharing networks, such as the original iteration of the MP3-sharing network Napster, relied on a central index server to assist with the transfer of files. When someone searched for a file, the central index server -- which contained an index of all of the users and their shared content -- searched for all available copies of the file and presented them to the user; the file would then be transferred directly between the two private computers \cite{P2PFileSharewiki}. Because the file sharing occurred over a central network, Napster was held liable for copyright infringement over the sharing of MP3 files and was shut down in 2001. New protocols such as BitTorrent represent a technological evolution of P2P file-sharing networks.
 
 \subsection{BitTorrent Protocol}
 
 BitTorrent is a P2P file-sharing protocol that makes use of a unique design to reduce the bandwidth and download time for more frequently requested data. The protocol allows users to download a file quickly by integrating all users requesting that file into a ``swarm'' of hosts to download and upload from each other simultaneously. Thus, instead of attempting to transfer a large file from one user to another -- a slow, bandwidth-intensive process --, BitTorrent allows a user to download small segments of the file from a variety of users, significantly reducing computational energy and download time\cite{BitTorrent}. Because of this design, BitTorrent is often used for distribution of very large files, very popular files, and files available for free, as it is more efficient to distribute these files using BitTorrent than a regular download.
 
-When a user ``torrents,'' or attempts to download a file over a P2P network using a BitTorrent client, they begin by loading a .torrent file into the BitTorrent client. A .torrent file is a computer file that contains metadata about the files to be distributed, including file names, sizes, checksums of all individual pieces, and a list of the network locations of ``trackers.'' Trackers are servers that facilitate communication between peers seeking to download the same data on a P2P network \cite{HTG}. The tracker shares the peers' IP addresses with other BitTorrent clients in the ``swarm,'' the group of all peers sharing a torrent. Each piece of a file specified in a torrent is protected by a cryptographic hash contained in the .torrent file \cite{BitTorrent}. This ensures that any modification of the piece can be easily detected, preventing a user from downloading both accidental and malicious modifications of any pieces of a file.
+When a user ``torrents,'' or attempts to download a file over a P2P network using a BitTorrent client, they begin by loading a .torrent file into the BitTorrent client. A .torrent file is a computer file that contains metadata about the files to be distributed, including file names, sizes, checksums of all individual pieces, and a list of the network locations of ``trackers.'' Trackers are servers that facilitate communication between peers seeking to download the same data on a P2P network \cite{Incentives}. The tracker shares the peers' IP addresses with other BitTorrent clients in the ``swarm,'' the group of all peers sharing a torrent. Each piece of a file specified in a torrent is protected by a cryptographic hash contained in the .torrent file \cite{BitTorrent}. This ensures that any modification of the piece can be easily detected, preventing a user from downloading both accidental and malicious modifications of any pieces of a file.
 
-The process of sharing data via BitTorrent starts with a \emph{seed}, or the initial machine possessing 100\% of the data. Then \emph{leechers}, also known as \emph{downloaders}, load a .torrent file and request a download. Once connected, a BitTorrent client downloads small pieces of the files specified in the torrent from different computers in the swarm. When the BitTorrent client has some data, it can then begin to upload that data to other BitTorrent clients. By using both downloading and uploading bandwidth simultaneously and dividing the files into pieces, the time required to download the file is significantly reduced \cite{BitTorrent}. Thus, it is worth noting that, ``Everyone downloading a torrent is also uploading the same torrent. If 10,000 people are downloading the same file, it doesn't put a lot of stress on [any] central server. Instead, each downloader contributes upload bandwidth to other downloaders, ensuring the torrent stays fast," \cite{HTG}. As the number of downloaders increases, the reliance of new leechers on old sources decreases. Thus, each successful downloader becomes a source of the file for future downloaders \cite{glossary}. From this point, the process repeats, allowing peers on the network to share any and all files to which any other peer has access.
+The process of sharing data via BitTorrent starts with a \emph{seed}, or the initial machine possessing 100\% of the data. Then \emph{leechers}, also known as \emph{downloaders}, load a .torrent file and request a download. Once connected, a BitTorrent client downloads small pieces of the files specified in the torrent from different computers in the swarm. When the BitTorrent client has some data, it can then begin to upload that data to other BitTorrent clients. By using both downloading and uploading bandwidth simultaneously and dividing the files into pieces, the time required to download the file is significantly reduced \cite{BitTorrent}. Thus, it is worth noting that, ``Everyone downloading a torrent is also uploading the same torrent. If 10,000 people are downloading the same file, it doesn't put a lot of stress on [any] central server. Instead, each downloader contributes upload bandwidth to other downloaders, ensuring the torrent stays fast," \cite{HTG}. As the number of downloaders increases, the reliance of new leechers on old sources decreases. Thus, each successful downloader becomes a source of the file for future downloaders \cite{Incentives}. From this point, the process repeats, allowing peers on the network to share any and all files to which any other peer has access.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% ********			LEGAL ISSUES  		******** %%%%%
@@ -70,7 +72,7 @@ The process of sharing data via BitTorrent starts with a \emph{seed}, or the ini
 
 \section{Legal Issues \& Security Implications}
 
-While the BitTorrent protocol itself is legal, those who use the service often do so to obtain files illegally. Illegally obtaining files, also known as digital piracy, involves sharing copyrighted media such as games, music, movies, TV shows, and software that the user does not have permission to share. Whether the user is downloading or uploading content, involvement in this type of non-permitted operation is considered a violation of copyright law \cite{illegal-downloading}. Often times, digital piracy constitutes a violation of the Digital Millennium Copyright Act (DMCA). The DMCA is a United States copyright law that criminalizes the production and dissemination of technology, devices, or services intended to circumvent digital rights management (DRM) measures that control access to copyrighted works \cite{DMCA}. Penalties for violation include both civil and criminal remedies, which can consist of both significant fines and/or imprisonment \cite{DMCA2}. In a 2010 sampling of the one thousand most actively seeded torrent files, 89 percent of the files were confirmed to be illegally shared and the majority of the remaining 11 percent were determined to be ``likely infringing,'' \cite{illegalFilesTorrent}. Only three files, or 0.3\%, were confirmed to be legal. The analysis of student's perception of torrenting in this study will focus on the sharing of the illegal torrents, which comprise the overwhelming majority of the data shared through BitTorrent clients.
+While the BitTorrent protocol itself is legal, those who use the service often do so to obtain files illegally. Illegally obtaining files, also known as digital piracy, involves sharing copyrighted media such as games, music, movies, TV shows, and software that the user does not have permission to share. Whether the user is downloading or uploading content, involvement in this type of non-permitted operation is considered a violation of copyright law \cite{illegal-downloading}. Often times, digital piracy constitutes a violation of the Digital Millennium Copyright Act (DMCA). The DMCA is a United States copyright law that criminalizes the production and dissemination of technology, devices, or services intended to circumvent digital rights management (DRM) measures that control access to copyrighted works \cite{DMCA}. Penalties for violation include both civil and criminal remedies, which can consist of both significant fines and/or imprisonment. In a 2010 sampling of the one thousand most actively seeded torrent files, 89 percent of the files were confirmed to be illegally shared and the majority of the remaining 11 percent were determined to be ``likely infringing,'' \cite{illegalFilesTorrent}. Only three files, or 0.3\%, were confirmed to be legal. The analysis of student's perception of torrenting in this study will focus on the sharing of the illegal torrents, which comprise the overwhelming majority of the data shared through BitTorrent clients.
 
 \subsection{Security Implications for Individuals and Network Hosts}
 
@@ -153,7 +155,7 @@ Goldstein noted a number of problems with receiving DMCA complaints and attempts
 
 There exists an inherent discrepancy between the types of data collected in the different sections of the study: the perception survey targeted  individual users' actions and beliefs, while the network data was aggregated for all students at Dartmouth. While this makes some one-to-one comparisons between actual use and perception of torrenting difficult, there are still some valuable relationships between how students perceive BitTorrent use and its actual incidence on campus.
 
-Generally, the number of students who received DMCA complaints each year is relatively small compared to the size of the student body. The 466 complaints from 2012, for example, is relatively small compared to Dartmouth's approximately 6000 undergraduate and graduate students. These numbers indicate that a maximum of 7.8\% of students receive complaints in a given year. However, as Goldstein pointed out, one student's actions could generate 50-60 complaints. For this reason, the percentage of students who receive DMCA complaints is likely much smaller, closer to 1-3\% of the total student population. -- THIS IMPLIES THAT ...... 
+Generally, the number of students who received DMCA complaints each year is relatively small compared to the size of the student body. The 466 complaints from 2012, for example, is relatively small compared to Dartmouth's approximately 6000 undergraduate and graduate students. These numbers indicate that a maximum of 7.8\% of students receive complaints in a given year. However, as Goldstein pointed out, one student's actions could generate 50-60 complaints. For this reason, the percentage of students who receive DMCA complaints is likely much smaller, closer to 1-3\% of the total student population. This implies that a large portion of students who torrent in a given year never receive a DMCA complaint.
 
 From the data on whether students believe that Dartmouth records when someone torrents a file, it is clear that the 21.5\% of students who answered No and the 42\% who answered Unsure underestimate the amount of information to which Dartmouth's network administrators have access. There are a number of possibilities for why 63.5\% of students are not aware of Dartmouth's access to their internet behavior. Students might not consider Dartmouth's access to their personal information because they prefer to turn a blind eye to the associated privacy issues. Perhaps they believe that Dartmouth does not have the technical capabilities to keep this information, or these students may simply choose not to concern themselves with the matter. Nevertheless, the fact that the No/Unsure segment is so large indicates that there is a clear disconnect between students' perception of the Dartmouth's network capabilities and the actual practice by the College. It is possible that, by equipping students with knowledge of Dartmouth's capabilities, student network usage and Dartmouth practice may become more aligned. However, it is important to note that, while Dartmouth has access to this network information, the College does not monitor individual traffic unless there is a concern that a user's network presence is not in line with the College's accepted standards.
 
@@ -189,43 +191,43 @@ Charles Palmer provided guidance in the direction of this research and helped to
 
 \begin{thebibliography}{99}
 
-\bibitem{BitTorrent} ``BitTorrent: Beginner's Guide.'' \emph{BitTorrent Inc.} Accessed November 4, 2013. Available at http://www.bittorrent.com/help/guides/beginners-guide.
+\bibitem{BitTorrent} ``BitTorrent: Beginner's Guide." \emph{BitTorrent Inc.}. Accessed November 13, 2013. Available at http://www.bittorrent.com/help/guides/beginners-guide/.
 
 \bibitem{NYTimes} Shannon, Victoria. ``The End User: P2P starts to mature.'' \emph{New York Times}. July 9, 2005. Available at http://www.nytimes.com/2005/07/08/technology/08iht-ptend09.html.
 
 \bibitem{scholl} Rüdiger Schollmeier, A Definition of Peer-to-Peer Networking for the Classification of Peer-to-Peer Architectures and Applications, Proceedings of the First International Conference on Peer-to-Peer Computing, IEEE (2002).
 
-\bibitem{About} Mitchell, Bradley. ``P2P Networking and P2P Software: Introduction to Peer to Peer (P2P) Networks and Software Systems.'' \emph{About.com Wireless/Newtorking.} Accessed November 6, 2013. Available at http://compnetworking.about.com/od/p2ppeertopeer/a/p2pintroduction.htm.
-
 \bibitem{P2PFileSharewiki} ``Peer-to-peer file sharing.'' \emph{Wikipedia}. Accessed November 4, 2013. Available at http://en.wikipedia.org/wiki/Peer-to-peer\_file\_sharing\#History.
 
-\bibitem{napster} Douglas, Guy. ``Copyright and Peer-To-Peer Music File Sharing: The Napster Case and the Argument Against Legislative Reform.'' \emph{Murdoch University Electronic Journal of Law.} Vol. 11, No. 1 (March 2004). Available at http://www.murdoch.edu.au/elaw/issues/v11n1/douglas111.html.
-
-\bibitem{torrent-poisoning} ``Torrent poisoning.'' \emph{Wikipedia.} Accessed November 8, 2013. Available at http://en.wikipedia.org/wiki/Torrent\_poisoning.
+\bibitem{Incentives} Cohen, Bram. "Incentives Build Robustness in BitTorrent." Published May 22, 2003. Accessed November 7, 2013. Available at http://www.bittorrent.org/bittorrentecon.pdf.
 
 \bibitem{HTG} Hoffman, Chris. ``How Does BitTorrent Work?'' \emph{How-To Geek.} Published March 21, 2013. Accessed November 7, 2013. Available at http://www.howtogeek.com/141257/htg-explains-how-does-bittorrent-work/.
 
-\bibitem{glossary} ``Glossary of BitTorrent terms.'' \emph{Wikipedia.} Accessed November 10, 2013. Available at http://en.wikipedia.org/wiki/Glossary\_of\_BitTorrent\_terms\#Leech.
+\bibitem{illegal-downloading} ``The Law.'' \emph{RIAA} Accessed November 12, 2013. Available at http://www.riaa.com/physicalpiracy.php?content\_selector=piracy\_online\_the\_law.
 
-\bibitem{PaloAlto} ``PaloAlto Networks: Next-Generation Firewall Technology.'' \emph{PaloAlto Networks.} Accessed November 14, 2013. Available at https://www.paloaltonetworks.com/products/technologies.html.
-
-\bibitem{Goldstein} email conversation and discussion with Adam Goldstein, Dartmouth College Computing Services
-
-\bibitem{Netflix-Youtube} ``Netflix, YouTube cause dramatic drop in file-sharing traffic.'' \emph{Circa.} Published November 11, 2013. Accessed November 14, 2013. Available at http://cir.ca/news/sandvine-internet-traffic-reports.
-
-\bibitem{illegal-downloading} Poirier, Gina. ``Define Illegal Downloading.'' \emph{eHow tech.} Accessed November 12, 2013. Available at http://www.ehow.com/info\_10004321\_define-illegal-downloading.html.
-
-\bibitem{AcceptableUsePolicy} ``Acceptable Use Policy.'' \emph{Dartmouth College - Computing at Dartmouth.} Accessed November 12, 2013. Available at http://www.dartmouth.edu/comp/about/policies/acceptable\_use\_policy.html.
+\bibitem{DMCA} ``The Digital Millennium Copyright Act of 1998: Summary'' \emph{U.S. Copyright Office.} Accessed November 14, 2013. Available at http://www.copyright.gov/legislation/dmca.pdf.
 
 \bibitem{illegalFilesTorrent} Cheng, Jacqui. ``Only 0.3\% of files on BitTorrent confirmed to be legal.'' Published July 23, 2010. Accessed November 12, 2013. Available at http://arstechnica.com/tech-policy/2010/07/only-03-of-files-on-bit-torrent-confirmed-to-be-legal/.
 
-\bibitem{DartmouthCopyright} ``Peer-to-Peer File Sharing and Copyright Law.'' \emph{Dartmouth College - Copyright Policy \& Guidelines.} Accessed November 4, 2013. Available at http://www.dartmouth.edu/copyright/peer2peer/index.html\#P2P.
-
-\bibitem{DMCA} ``Digital Millenium Copyright Act.'' \emph{Wikipedia.} Accessed November 14, 2013. Available at http://en.wikipedia.org/wiki/Digital\_Millennium\_Copyright\_Act.
-
-\bibitem{DMCA2} ``Frequently Asked Questions (and Answers) about Anticircumvention (DMCA).'' \emph{Chilling Effects.} Accessed November 14, 2013. Available at http://chillingeffects.org/anticircumvention/faq.cgi\#QID122.
+\bibitem{torrent-poisoning} ``Torrent poisoning.'' \emph{Wikipedia.} Accessed November 8, 2013. Available at http://en.wikipedia.org/wiki/Torrent\_poisoning.
 
 \bibitem{malware} Vegge, HŒvard; Halvorsen, Finn Michael; NergŒrd; Rune, Wals¿. "Where Only Fools Dare to Tread: An Empirical Study on the Prevalence of Zero-day Malware." \emph{2009 Fourth International Conference on Internet Monitoring and Protection} (IEEE Computer Society). Published December 17, 2008. Accessed November 16, 2013. Available at http://www.rookconsulting.com/Downloads/NTNU-zeroday-project-2008.pdf
+
+\bibitem{AcceptableUsePolicy} ``Acceptable Use Policy.'' \emph{Dartmouth College - Computing at Dartmouth.} Accessed November 12, 2013. Available at http://www.dartmouth.edu/comp/about/policies/acceptable\_use\_policy.html.
+
+\bibitem{DartmouthCopyright} ``Peer-to-Peer File Sharing and Copyright Law.'' \emph{Dartmouth College - Copyright Policy \& Guidelines.} Accessed November 4, 2013. Available at http://www.dartmouth.edu/copyright/peer2peer/index.html\#P2P.
+
+\bibitem{Goldstein} Goldstein, Adam. Personal interview. November 8, 2013.
+
+\bibitem{PaloAlto} ``PaloAlto Networks: Next-Generation Firewall Technology.'' \emph{PaloAlto Networks.} Accessed November 14, 2013. Available at https://www.paloaltonetworks.com/products/technologies.html.
+
+\bibitem{Netflix-Youtube} ``Global Internet Phenomena Report.'' \emph{Sandvine.} Published November 2013. Accessed November 14, 2013. Available at https://www.sandvine.com/downloads/general/global-internet-phenomena/2013/2h-2013-global-internet-phenomena-report-pdf.pdf.
+
+
+
+
+
+
 
 \end{thebibliography}
 
