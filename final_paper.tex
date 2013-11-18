@@ -18,6 +18,9 @@
 \usepackage[superscript,biblabel]{cite}
 \usepackage{url}
 
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
 
 \begin{document}
 
@@ -31,28 +34,25 @@ In our final project, we investigated student perceptions and use of the BitTorr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \pagebreak
+\begin{multicols}{2}
 \section{Introduction}
 
-BitTorrent is a protocol supporting peer-to-peer (P2P) file sharing that facilitates the distribution of large data files over the Internet \cite{BitTorrent}. BitTorrent is one of the most common protocols for transferring large files and is often used to distribute popular files and files available for free, such as literary texts, audio files, movies, and applications. ``Torrenting'' is the process by which a user engages with a BitTorrent client in order to send and receive those desired files. To understand the uniqueness -- and security implications -- of the BitTorrent protocol, one must first develop a working understanding of P2P file sharing. From there, the legality of P2P file sharing and torrenting can be made clear. With this foundation, the authors conducted a study in which student perceptions of torrenting at Dartmouth College were compared  with Dartmouth College Computing Service's data on student torrenting. Conclusions and policy recommendations are then made with the goal of aligning student perceptions and administrative desires with regard to torrenting. To the best of the authors' knowledge, this is the first study conducted that compared student perceptions and actual incidences of torrenting at Dartmouth College.
+BitTorrent is a protocol supporting peer-to-peer (P2P) file sharing that facilitates the distribution of large data files over the Internet \cite{BitTorrent}. BitTorrent is one of the most common protocols for transferring large files and is often used to distribute popular files and files available for free, such as literary texts, audio files, movies, and applications. ``Torrenting'' is the process by which a user engages with a BitTorrent client in order to send and receive desired files. To understand the uniqueness and security implications of the BitTorrent protocol, one must first develop a working understanding of P2P file sharing. From there, the legality of P2P file sharing and torrenting become clear. With this foundation, the authors then describe a study in which student perceptions of torrenting at Dartmouth College were compared with College network data on student torrenting. Conclusions and policy recommendations are then made with the goal of aligning student perceptions and administrative desires with regard to torrenting. To the best of the authors' knowledge, this is the first study conducted that compared student perceptions and actual incidences of torrenting at Dartmouth College.
 
 \subsection{Peer-to-Peer (P2P) File Sharing}
-P2P is a ``type of Internet network that allows users with the same program to connect with each other and access files on one another's hard drives without the intervention of a server computer,'' \cite{NYTimes}. This decentralized network architecture consists of individual nodes called \emph{peers} that act as both suppliers and consumers of resources. In P2P networks, tasks are shared among multiple, interconnected peers who each make a portion of their resources -- processing power, disk storage, or network bandwidth -- available to all network participants, without the centralized coordination of a server-client model \cite{scholl}. A comparison of a decentralized-P2P network and a centralized server-based network are presented in Figure 1 and Figure 2 below.
+P2P is a ``type of Internet network that allows users with the same program to connect with each other and access files on one another's hard drives without the intervention of a server computer,'' \cite{NYTimes}. This decentralized network architecture consists of individual nodes called \emph{peers} that act as both suppliers and consumers of resources. In P2P networks, tasks are shared among multiple, interconnected peers who each make a portion of their resources -- processing power, disk storage, or network bandwidth -- available to all network participants, without the centralized coordination of a server-client model \cite{scholl}. A comparison of a decentralized-P2P network and a centralized server-based network are presented in Figure 1 and Figure 2.
 
-\begin{figure}[h!]
-\centering
-\begin{minipage}[b]{0.45\linewidth}
+\begin{Figure}
+	\centering
 	\includegraphics[width=56mm]{P2P-network}
-	\caption{A peer-to-peer (P2P) network with interconnected nodes (``peers'') sharing resources. Source: Wikipedia.}
-	\label{p2p_network}
-\end{minipage}
-\quad
-\centering
-\begin{minipage}[b]{0.45\linewidth}
+	\captionof{figure}{A peer-to-peer (P2P) network with interconnected nodes (``peers'') sharing resources. Source: Wikipedia.}
+	\end{Figure}
+\begin{Figure}
+	\centering
 	\includegraphics[width=56mm]{Server-based-network}
-	\caption{A client-server model network, where individual clients request services from centralized servers. Source: Wikipedia.}
+	\captionof{figure}{A client-server model network, where individual clients request services from centralized servers. Source: Wikipedia.}
 	\label{p2p_network}
-\end{minipage}
-\end{figure}
+\end{Figure}
 
 P2P networks are often found in residential home networks, allowing users to configure their computers to share files, printers, and other resources among all devices; with a number of computers running similar network protocols, P2P is a convenient way to access shared resources. However, the term ``P2P'' used today generally does not refer to the network architecture from which its name is derived, but to P2P file sharing systems. Using P2P software applications such as Gnutella or eDonkey, users are able to search for, transfer, and download data files over the Internet with any user on the same P2P file sharing network. The implications of such systems are huge: if \emph{any} user on the system has a file that another user demands, the second user can -- via the network -- obtain the file. The second user will then also become a source of the file in the P2P network, making it faster and easier for more users to download the file. 
 
@@ -110,21 +110,18 @@ Of the 130 students, 78 (60.0\%) stated that they had previously downloaded a fi
 
 Considering all 130 students (both torrenters and non-torrenters), 82 (63.1\%) claimed to download zero files per month on average via torrenting. This was statistically significantly different (\emph{p}$<$.00001) from the small percentage of students (16 students, 12.3\%) who reported that they believed that the average Dartmouth student downloads zero files per month via torrenting. The median self-reported number of files downloaded via torrenting on average was zero, while the median perceived number of files torrented by the average student was in the category ``one to five.'' Based on the distributions presented in Figures 3 and 4 below, there is a clear right shift in Figure 4 as compared with Figure 3, indicating that there is likely a significantly higher perception of student torrenting at Dartmouth than what actually occurs.
 
-\begin{figure}[h!]
-\centering
-\begin{minipage}[b]{0.45\linewidth}
+\begin{Figure}
+	\centering
 	\includegraphics[width=77mm]{Figure3}
-	\caption{Bar distribution of reported number of files downloaded via torrenting by the participant.}
+	\captionof{figure}{Bar distribution of reported number of files downloaded via torrenting by the participant.}
 	\label{p2p_network}
-\end{minipage}
-\quad
-\centering
-\begin{minipage}[b]{0.45\linewidth}
+\end{Figure}
+\begin{Figure}
+	\centering
 	\includegraphics[width=77mm]{Figure4}
-	\caption{Bar distribution of perceived number of files downloaded via torrenting by the ``average Dartmouth student.''}
+	\captionof{figure}{Bar distribution of perceived number of files downloaded via torrenting by the ``average Dartmouth student.''}
 	\label{p2p_network}
-\end{minipage}
-\end{figure}
+\end{Figure}
 
 The results were less conclusive with regard to whether participants believed that Dartmouth recorded student torrenting information and whether knowledge of Dartmouth's Copyright Violation Policy affects how often the participant torrents. Of the 130 students asked if Dartmouth records when someone torrents a file, 47 (36.2\%) said Yes; 28 (21.5\%) said No; and 55 (42.3\%) said they were Unsure. Attempting to break down the results further by the results of other questions in the survey, the results were still inconclusive. More data would need to be collected to determine this result. Regarding whether knowledge of Dartmouth's Copyright Violation Policy affected personal torrenting practices, there was no significant difference (\emph{p}$>$.05) between the number of participants who said Yes (N=63, 48.5\%) and who said No (N=67, 51.5\%). 
 
@@ -157,7 +154,7 @@ There exists an inherent discrepancy between the types of data collected in the 
 
 Generally, the number of students who received DMCA complaints each year is relatively small compared to the size of the student body. The 466 complaints from 2012, for example, is relatively small compared to Dartmouth's approximately 6000 undergraduate and graduate students. These numbers indicate that a maximum of 7.8\% of students receive complaints in a given year. However, as Goldstein pointed out, one student's actions could generate 50-60 complaints. For this reason, the percentage of students who receive DMCA complaints is likely much smaller, closer to 1-3\% of the total student population. This implies that a large portion of students who torrent in a given year never receive a DMCA complaint.
 
-From the data on whether students believe that Dartmouth records when someone torrents a file, it is clear that the 21.5\% of students who answered No and the 42\% who answered Unsure underestimate the amount of information to which Dartmouth's network administrators have access. There are a number of possibilities for why 63.5\% of students are not aware of Dartmouth's access to their internet behavior. Students might not consider Dartmouth's access to their personal information because they prefer to turn a blind eye to the associated privacy issues. Perhaps they believe that Dartmouth does not have the technical capabilities to keep this information, or these students may simply choose not to concern themselves with the matter. Nevertheless, the fact that the No/Unsure segment is so large indicates that there is a clear disconnect between students' perception of the Dartmouth's network capabilities and the actual practice by the College. It is possible that, by equipping students with knowledge of Dartmouth's capabilities, student network usage and Dartmouth practice may become more aligned. However, it is important to note that, while Dartmouth has access to this network information, the College does not monitor individual traffic unless there is a concern that a user's network presence is not in line with the College's accepted standards.
+From the data on whether students believe that Dartmouth records when someone torrents a file, it is clear that the 21.5\% of students who answered No and the 42\% who answered Unsure underestimate the amount of information to which Dartmouth's network administrators have access. There are a number of possibilities for why 63.5\% of students are not aware of Dartmouth's access to their internet behavior. Students might not consider Dartmouth's access to their personal information because they prefer to turn a blind eye to the associated privacy issues. Perhaps they believe that Dartmouth does not have the technical capabilities to keep this information. Nevertheless, the fact that the No/Unsure segment is so large indicates that there is a clear disconnect between students' perception of the Dartmouth's network capabilities and the actual practice by the College. It is possible that, by equipping students with knowledge of Dartmouth's capabilities, student network usage and Dartmouth practice may become more aligned.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% ********			  CONCLUSIONS  		******** %%%%%
@@ -175,7 +172,7 @@ Tied with increased disciplinary action among student recommendations was to pro
 
 Despite the useful recommendations among those who answered the optional final question, nearly half (47.1\%) believed that no changes were necessary. These people might not want any changes because either they want to continue their illegal actions or they don't torrent anyway. With BitTorrent usage declining without further preventative measures, this group might have a point that no further action is completely necessary.
 
-However, the discrepancy between students' perceptions and the College's actions may extend to how students think about security in a more general sense. If users never understand the consequences of their actions, then they will see no reason to change their online behavior. Through taking more severe measures against students' risky behavior on the network, the administration might be able to help curb security concerns.
+However, the discrepancy between student perceptions and College actions may extend to how students think about security in a more general sense. If users never understand the consequences of their actions, then they will see no reason to change their online behavior. Through taking more severe measures against students' risky behavior on the network, the administration might be able to help curb security concerns.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% ********		ACKNOWLEDGEMENTS  	******** %%%%%
@@ -183,6 +180,7 @@ However, the discrepancy between students' perceptions and the College's actions
 
 \subsection*{Acknowledgments}
 Charles Palmer provided guidance in the direction of this research and helped to connect the authors with security specialists at Dartmouth College Computing Services. Adam Goldstein from Dartmouth College Computing Services engaged in useful discussion with the authors and provided key data about Dartmouth network patterns and BitTorrent usage, without which this research could not have been completed.
+\end{multicols}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% ********			  REFERENCES  		******** %%%%%
@@ -226,12 +224,6 @@ Charles Palmer provided guidance in the direction of this research and helped to
 \bibitem{PaloAlto} ``PaloAlto Networks: Next-Generation Firewall Technology.'' \emph{PaloAlto Networks.} Accessed November 14, 2013. Available at https://www.paloaltonetworks.com/products/technologies.html.
 
 \bibitem{Netflix-Youtube} ``Global Internet Phenomena Report.'' \emph{Sandvine.} November 2013. Accessed November 14, 2013. Available at https://www.sandvine.com/downloads/general/global-internet-phenomena/2013/2h-2013-global-internet-phenomena-report-pdf.pdf.
-
-
-
-
-
-
 
 \end{thebibliography}
 
